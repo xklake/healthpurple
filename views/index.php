@@ -14,7 +14,7 @@
 ?>
 
 <section id="main-slider">
-    <div class="carousel slide" data-ride="carousel">
+    <div class="carousel slide" data-ride="carousel" data-interval="2000">
         <ol class="carousel-indicators">
             <?php foreach($banners as $item) {
             if($index == 0){
@@ -107,7 +107,7 @@ foreach($products as $item){
             <span style="font-size: 2rem; ">Contact us</span>
         </div>
 
-        <div class="row" style="margin: 30px 0px 0px 0px">
+        <div class="row" style="margin: 30px 0px 30px 0px">
             <div class="col-sm-6">
                 <img style="width: 100%;" src="<?=$storeimg->image?>">
             </div>
