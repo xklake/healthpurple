@@ -30,7 +30,7 @@ use yii\helpers\Html;
     <?php $this->head() ?>
 </head><!--/head-->
 
-<body id="page-top" data-spy="scroll" data-target="navbar-fixed-top">
+<body id="page-top" data-spy="scroll" data-target=".navbar">
 <?php $this->beginBody() ?>
 
 <?= $this->render('header.php') ?>
