@@ -56,10 +56,10 @@
             <?php $index ++; } ?>
         </div><!--/.carousel-inner-->
     </div><!--/.carousel-->
-    <a class="prev hidden-xs" href="main-slider" data-slide="prev" role="button">
+    <a class="prev hidden-xs" href="#main-slider" data-slide="prev" role="button">
         <i class="fa fa-chevron-left"></i>
     </a>
-    <a class="next hidden-xs" href="main-slider" data-slide="next" role="button">
+    <a class="next hidden-xs" href="#main-slider" data-slide="next" role="button">
         <i class="fa fa-chevron-right"></i>
     </a>
 </section><!--/#main-slider-->
