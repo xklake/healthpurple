@@ -9,7 +9,7 @@
             </button>
 
             <a class="navbar-brand page-scroll" href="#page-top" style="color: lightgreen;font-size: 2.3rem;">
-                <?=Yii::$app->getTextBlock('logo')?>
+                <?=Yii::$app->getTextBlock('logo')->content?>
             </a>
         </div>
 
