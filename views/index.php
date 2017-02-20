@@ -125,7 +125,7 @@ foreach($products as $item){
                     <i class="fa fa-phone" style="font-size: 2rem;"></i>
 
                     <a href='tel:<?=Yii::$app->setting->get('phone')?>'>
-                        <?=Yii::$app->setting->get('mobile')?>
+                        <?=Yii::$app->setting->get('phone')?>
                     </a>
                 </div>
                 <br/>
