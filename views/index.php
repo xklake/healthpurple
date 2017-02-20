@@ -114,14 +114,21 @@ foreach($products as $item){
 
             <div class="col-sm-6" style="margin-top:30px;">
                 <div>
-                    <i class="fa fa-phone" style="font-size: 2rem;"></i>
+                    <i class="fa fa-mobile" style="font-size: 2rem;"></i>
 
                     <a href='tel:<?=Yii::$app->setting->get('mobile')?>'>
                         <?=Yii::$app->setting->get('mobile')?>
                     </a>
                 </div>
                 <br/>
+                <div>
+                    <i class="fa fa-phone" style="font-size: 2rem;"></i>
 
+                    <a href='tel:<?=Yii::$app->setting->get('phone')?>'>
+                        <?=Yii::$app->setting->get('mobile')?>
+                    </a>
+                </div>
+                <br/>
                 <div>
                     <i class="fa fa-map-marker" style="font-size: 2rem;"></i>
                     <span>
