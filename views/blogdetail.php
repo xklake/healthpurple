@@ -37,16 +37,6 @@
     </div>
 </div><!--/.blog-item-->
 
-<div class="media reply_section">
-    <div class="pull-left post_reply text-center">
-        <a href="#"><img src="/images/avatar3.png" class="img-circle" alt="" /></a>
-        <ul>
-            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-            <li><a href="#"><i class="fa fa-google-plus"></i> </a></li>
-        </ul>
-    </div>
-</div>
 
 <div id="allcomments">
     <h1 id="comments_title"><span id='comment_count'></span>Comments</h1>
