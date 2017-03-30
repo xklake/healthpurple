@@ -61,9 +61,9 @@
                     <label>Nickname *</label>
                     <?php
                     if($isGuest) {  ?>
-                        <input type='text'  id='author' class='form-control' placeholder='昵称'>
+                        <input type='text'  id='author' class='form-control' placeholder='Nickname'>
                     <?php } else { ?>
-                        <input type='text'  id='author' class='form-control' placeholder='昵称' disabled='disabled' value="<?=Yii::$app->user->identity->profile->surname?>">
+                        <input type='text'  id='author' class='form-control' placeholder='Nickname' disabled='disabled' value="<?=Yii::$app->user->identity->profile->surname?>">
                     <?php } ?>
                 </div>
 
@@ -71,9 +71,9 @@
                     <label>Email *</label>
                     <?php
                     if($isGuest) {  ?>
-                        <input type='text'  id='email' class='form-control' placeholder='邮箱'>
+                        <input type='text'  id='email' class='form-control' placeholder='Email'>
                     <?php } else { ?>
-                        <input type='text'  id='email' class='form-control' placeholder='邮箱' disabled='disabled' value="<?=Yii::$app->user->identity->email?>">
+                        <input type='text'  id='email' class='form-control' placeholder='Email' disabled='disabled' value="<?=Yii::$app->user->identity->email?>">
                     <?php } ?>
                 </div>
 
