@@ -11,7 +11,7 @@ $this->beginContent('@frontend/web/template/healthpurple/layouts/main.php');
 
 <section id="blog" class="container">
     <div class="blog">
-        <div class="row">
+        <div class="row" style="margin-top: 120px;">
             <div class="col-md-8">
                 <?= $content ?>
             </div><!--/.col-md-8-->

@@ -16,15 +16,15 @@
         <div class="collapse navbar-collapse  navbar-ex1-collapse navbar-right ">
             <ul class="nav navbar-nav" >
                 <li>
-                    <a href="<?=Url::home(true).'#service1'?>" class="page-scroll" >Service</a>
+                    <a href="<?=\yii\helpers\Url::home(true).'#service1'?>" class="page-scroll" >Service</a>
                 </li>
 
                 <li>
-                    <a href="<?=Url::home(true).'#price'?>" class="page-scroll" >Price</a>
+                    <a href="<?=\yii\helpers\Url::home(true).'#price'?>" class="page-scroll" >Price</a>
                 </li>
 
                 <li>
-                    <a href="<?=Url::home(true).'#contact'?>" class="page-scroll" >Contact</a>
+                    <a href="<?=\yii\helpers\Url::home(true).'#contact'?>" class="page-scroll" >Contact</a>
                 </li>
 
                 <li>
