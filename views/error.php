@@ -7,8 +7,8 @@
  */
 ?>
 
-<section id="error" class="container text-center">
-    <h1>哎呀！程序员又得挨骂了......</h1>
-    <p>你所链接的网站不存在或者错误，请联系网站负责人或者回到首页。</p>
-    <a class="btn btn-primary" href="<?=Yii::$app->homeUrl?>">回到首页</a>
+<section id="error" class="container text-center" style="margin: 300px 0px;">
+    <h1>SOMETHING IS WRONG !!</h1>
+    <p>The page does not exist, please check your url or contact the website owner.</p>
+    <a class="btn btn-primary" href="<?=Yii::$app->homeUrl?>" style="margin-top: 30px;">GO BACK TO HOME PAGE</a>
 </section><!--/#error-->
