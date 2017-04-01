@@ -11,6 +11,7 @@
 
     $products = \common\models\Product::find()->where(['status'=> \funson86\blog\models\Status::STATUS_ACTIVE])->andWhere(['=', 'catalog_id', 51])->all();
     $storeimg = Yii::$app->getImages('storepic');
+    $news = \funson86\blog\models\BlogPost::find()->where(['status'=>\funson86\blog\models\Status::STATUS_ACTIVE])->limit(4)->orderBy(['created_at' => SORT_DESC])->all();
 ?>
 
 <section id="main-slider">
