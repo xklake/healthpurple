@@ -177,7 +177,7 @@ foreach($products as $item){
 
 <section id="news">
     <div class="container-fluid">
-        <div class="text-center">
+        <div class="text-center" style="margin-top: 20px;">
             <span style="font-size: 2rem; ">Health Therapy</span>
         </div>
         <?php foreach($news as $item){ ?>
