@@ -8,8 +8,8 @@
                 <span class="icon-bar" style="background-color: #fff"></span>
             </button>
 
-            <a class="navbar-brand page-scroll" href="#page-top" style="color: lightgreen;font-size: 2.3rem;">
-                <?=Yii::$app->getTextBlock('logo')->content?>
+            <a class="navbar-brand page-scroll" href="<?=\yii\helpers\Url::home(true).'#page-top'?>" style="color: lightgreen;font-size: 2.3rem;">
+                <img src="<?=Yii::$app->urlManager->getHostInfo().'/images/logo.png'?>" alt="<?=Yii::$app->getTextBlock('logo')->content?>" style="margin-left: 0px;"/>
             </a>
         </div>
 

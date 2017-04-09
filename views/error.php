@@ -10,5 +10,8 @@
 <section id="error" class="container text-center" style="margin: 300px 0px;">
     <h1>SOMETHING IS WRONG !!</h1>
     <p>The page does not exist, please check your url or contact the website owner.</p>
-    <a class="btn btn-primary" href="<?=Yii::$app->homeUrl?>" style="margin-top: 30px;">GO BACK TO HOME PAGE</a>
+
+    <span class="btn btn-success">
+        Back To <a  href="<?=Yii::$app->urlManager->getHostInfo().Yii::$app->homeUrl?>" style="margin-top: 20px;">kent massage</a>
+    <span>
 </section><!--/#error-->

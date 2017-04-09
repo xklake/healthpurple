@@ -5,15 +5,15 @@
  * Date: 06/09/16
  * Time: 3:40 PM
  */
-
 namespace frontend\web\template\HealthPurple;
+use yii;
 use yii\web\AssetBundle;
 
 
 class HealthPurpleAssets extends AssetBundle
 {
     public $basePath = '@webroot';
-    public $baseUrl = '@web/healthpurple/assets';
+    public $baseUrl = '/healthpurple/assets';
 
 
     public $css = [
@@ -40,6 +40,14 @@ class HealthPurpleAssets extends AssetBundle
 
     public $depends = [
         // 'yii\web\YiiAsset',
-        'yii\web\JqueryAsset',
+        //'yii\web\JqueryAsset',
     ];
+
+    public function init()
+    {
+        if($this->baseUrl != null){
+            $this->baseUrl = Yii::$app->urlManager->getHostInfo().$this->baseUrl;
+        }
+        parent::init();
+    }
 }

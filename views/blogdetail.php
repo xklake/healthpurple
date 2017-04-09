@@ -8,16 +8,11 @@
 ?>
 
 <div class="blog-item">
-    <?php if($post->banner != null && $post->banner != "") {?>
-        <img class="img-responsive img-blog" src="<?='/'.$post->banner?>" width="100%" alt="" />
-    <?php } ?>
-
     <div class="row">
         <div class="col-xs-12 col-sm-2 text-center">
             <div class="entry-meta">
                 <span id="publish_date"><?=substr(date('Y', $post->created_at), 2).'/'.date('m', $post->created_at)?></span>
                 <span><i class="fa fa-user"></i> <a href="#"><?=$post->user->username?></a></span>
-                <span><i class="fa fa-comment"></i> <a href=""><?=$post->getCommentsCount()?> Comment</a></span>
             </div>
         </div>
         <div class="col-xs-12 col-sm-10 blog-content">
