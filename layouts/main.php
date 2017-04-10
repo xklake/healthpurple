@@ -21,7 +21,6 @@ use yii\helpers\Html;
     <script src="js/respond.min.js"></script>
     <![endif]-->
 
-    <link rel="shortcut icon" href="/images/favicon.ico">
     <link href="https://fonts.googleapis.com/css?family=Kaushan+Script" rel="stylesheet" type="text/css">
     <?php $this->head() ?>
 </head><!--/head-->
