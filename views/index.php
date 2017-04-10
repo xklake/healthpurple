@@ -20,9 +20,9 @@
             <?php foreach($banners as $item) {
             if($index == 0){
             ?>
-            <li data-target="#main-slider" data-slide-to="<?=$index?>" class="active"></li>
+            <li data-target="<?=Yii::$app->urlManager->getHostInfo().'/#main-slider'?>" data-slide-to="<?=$index?>" class="active"></li>
             <?} else { ?>
-            <li data-target="#main-slider" data-slide-to="<?=$index?>"></li>
+            <li data-target="<?=Yii::$app->urlManager->getHostInfo().'/#main-slider'?>" data-slide-to="<?=$index?>"></li>
             <? }
             $index ++ ; }?>
         </ol>
@@ -33,16 +33,16 @@
             foreach($banners as $item) {
                 if($index == 0){
                 ?>
-                    <div class="item active" style="background-image: url(<?=$item->image?>)">
+                    <div class="item active" style="background-image: url(<?=Yii::$app->urlManager->getHostInfo().'/'.$item->image?>)">
                 <?php } else { ?>
-                    <div class="item" style="background-image: url(<?=$item->image?>)">
+                    <div class="item" style="background-image: url(<?=Yii::$app->urlManager->getHostInfo().'/'.$item->image?>)">
                 <?php } ?>
                         <div class="container">
                             <div class="row slide-margin">
                                 <div class="col-sm-6">
                                     <div class="carousel-content">
-                                        <h1 class="animation animated-item-1"><?=$item->keywords?></h1>
-                                        <h2 class="animation animated-item-2"><?=$item->description?></h2>
+                                        <div class="animation animated-item-1" style="font-size: 4rem;line-height: 50px;"><?=$item->keywords?></div>
+                                        <div class="animation animated-item-2" style="font-size: 2.8rem;margin-top:35px; "><?=$item->description?></div>
                                     </div>
                                 </div>
 
@@ -57,10 +57,10 @@
             <?php $index ++; } ?>
         </div><!--/.carousel-inner-->
     </div><!--/.carousel-->
-    <a class="prev hidden-xs" href="#main-slider" data-slide="prev" role="button">
+    <a class="prev hidden-xs" href="<?=Yii::$app->urlManager->getHostInfo().'/#main-slider'?>" data-slide="prev" role="button">
         <i class="fa fa-chevron-left"></i>
     </a>
-    <a class="next hidden-xs" href="#main-slider" data-slide="next" role="button">
+    <a class="next hidden-xs" href="<?=Yii::$app->urlManager->getHostInfo().'/#main-slider'?>" data-slide="next" role="button">
         <i class="fa fa-chevron-right"></i>
     </a>
 </section><!--/#main-slider-->
@@ -79,7 +79,7 @@ foreach($products as $item){
                 <div class="col-md-6">
                     <div class="image-md-aside position-right">
                         <div class="image-wrap">
-                            <img src="<?=$item->thumb?>" alt="<?=$item->name?>" style="width: 100%;">
+                            <img src="<?=Yii::$app->urlManager->getHostInfo().'/'.$item->thumb?>" alt="<?=$item->name?>" style="width: 100%;">
                         </div>
                     </div>
                 </div>
@@ -110,7 +110,7 @@ foreach($products as $item){
 
         <div class="row" style="margin: 30px 0px 30px 0px">
             <div class="col-sm-6">
-                <img style="width: 100%;" src="<?=$storeimg->image?>">
+                <img style="width: 100%;" src="<?=Yii::$app->urlManager->getHostInfo().'/'.$storeimg->image?>">
             </div>
 
             <div class="col-sm-6" style="margin-top:30px;">
@@ -184,7 +184,7 @@ foreach($products as $item){
             <div class="row">
                 <div class="col-xs-12 col-sm-3">
                     <a href="<?=Yii::$app->urlManager->createAbsoluteUrl(['blog/default/view', 'id'=> $item->id])?>">
-                        <img class="img-responsive  img-thumbnail" src="<?='/'.$item->banner?>">
+                        <img class="img-responsive  img-thumbnail" src="<?=Yii::$app->urlManager->getHostInfo().'/'.$item->banner?>">
                     </a>
                 </div>
 

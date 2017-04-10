@@ -7,13 +7,6 @@
  */
 ?>
 
-<div class="widget search">
-    <form action="<?= Yii::$app->urlManager->createUrl(['/blog/default/catalog']) ?>" method="get" id="search_fm" name="search_fm" role="form">
-        <input class="form-control search_box" autocomplete="off" type="text" name="keyword" id="searchText" placeholder="Search......"/>
-    </form>
-</div><!--/.search-->
-
-
 <div class="widget categories">
     <h3>Blog Catalog</h3>
     <div class="row">
@@ -41,54 +34,13 @@
     </div>
 </div><!--/.categories-->
 
-
-<div class="widget categories">
-    <h3>Comments</h3>
-    <div class="row">
-        <div class="col-sm-12">
-            <?php
-                $comments = \funson86\blog\models\BlogComment::findRecentComments(10);
-                foreach($comments as $item){ ?>
-                    <div class="single_comments">
-                        <img src="/images/avatar3.png" alt=""  />
-                        <p><?=$item->content?></p>
-                        <div class="entry-meta small muted">
-                            <span><a href="#"><?=$item->author?></a></span <span>Comments  <a href="<?=Yii::$app->urlManager->createAbsoluteUrl(['blog/default/view', 'id'=> $item->blogPost->id])?>"><?=$item->blogPost->title?></a></span>
-                        </div>
-                    </div>
-
-                    <div style="clear:both"></div>
-            <?php } ?>
-        </div>
-    </div>
-</div><!--/.recent comments-->
-
-
-<div class="widget archieve">
-    <h3>Archive</h3>
-    <div class="row">
-        <div class="col-sm-12">
-            <ul class="blog_archieve">
-                <?php
-                    $archives = \funson86\blog\models\BlogCatalog::getArchive();
-                    foreach($archives as $item) {
-                ?>
-                    <li><a href="<?=Yii::$app->getUrlManager()->createUrl(['/blog/default/catalog/','createdmonth'=>$item['time']])?>"><i class="fa fa-angle-double-right"></i> <?=$item['time']?> <span class="pull-right">(<?=$item['count']?>)</span></a></li>
-                <?php
-                    }
-                ?>
-            </ul>
-        </div>
-    </div>
-</div><!--/.archieve-->
-
 <div class="widget tags">
     <h3>Hot Tags</h3>
     <ul class="tag-cloud">
         <?php $tags = array_reverse(\funson86\blog\models\BlogTag::findTagWeights(20));
             foreach($tags as $key => $val){
         ?>
-            <li><a class="btn btn-xs btn-primary" href="<?=Yii::$app->getUrlManager()->createUrl(['/blog/default/catalog/','tag'=>$key])?>"><?=$key?> (<?=$val?>)</a></li>
+            <li><a class="btn btn-xs btn-primary" href="<?=Yii::$app->getUrlManager()->createAbsoluteUrl(['/blog/default/catalog/','tag'=>$key])?>"><?=$key?> (<?=$val?>)</a></li>
         <?php } ?>
     </ul>
 </div><!--/.tags-->

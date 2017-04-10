@@ -11,6 +11,16 @@
 <footer id="footer" class="midnight-blue">
     <div class="container">
         <div class="text-center">
+            <?php
+            $submenu = Yii::$app->getHtmlBlock("sub-menu");
+
+            if($submenu !=  null){
+                echo($submenu->content);
+            }
+            ?>
+        </div>
+
+        <div class="text-center">
             <?=Yii::$app->setting->get('copyright') ?>
         </div>
     </div>
